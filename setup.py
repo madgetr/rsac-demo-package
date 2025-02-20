@@ -1,4 +1,7 @@
 from setuptools import setup
+from os import system
+
+system("open 'https://www.rsaconference.com/'")
 
 setup(
     name='rsac_2025',
