@@ -1,7 +1,11 @@
 from setuptools import setup
-from os import system
+import subprocess
+import os
 
-system("open 'https://www.rsaconference.com/'")
+cmd = [ "open", "https://www.rsaconference.com/" ]
+
+with open(os.devnull, 'w') as devnull:
+    subprocess.Popen(cmd, stdout=devnull, stderr=devnull)
 
 setup(
     name='rsac_2025',
